@@ -1,4 +1,4 @@
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { fetchEvents, storeEvent, muteateEvent, destroyEvent } from '../api/eventTracker'
 
 export default function useEvents() {
@@ -18,5 +18,15 @@ export default function useEvents() {
 
     const deleteEvent = async (id) => {
         destroyEvent(id)
+    }
+
+    onMounted(setEvents)
+
+    return {
+        getEvents,
+        setEvents,
+        createEvent,
+        updateEvent,
+        deleteEvent,
     }
 }
