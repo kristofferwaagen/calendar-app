@@ -9,7 +9,12 @@ import interactionPlugin from '@fullcalendar/interaction'
 
 const options = reactive({
   plugins: [dayGridPlugin, timeGridPlugin, listPlugin, interactionPlugin],
-  initialView: 'dayGridMonth'
+  initialView: 'dayGridMonth',
+  headerToolBar: {
+      left: 'prev,next,today',
+      center: 'title',
+      right: 'dayGridMonth,dayGridWeek,listDay'
+  }
 })
 </script>
 <template>
