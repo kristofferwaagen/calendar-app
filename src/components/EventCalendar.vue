@@ -14,6 +14,12 @@ const options = reactive({
       left: 'prev,next,today',
       center: 'title',
       right: 'dayGridMonth,dayGridWeek,listDay'
+  },
+  editable: true,
+  selectable: true,
+  weekends: true,
+  select: (arg) => {
+      console.log(arg.start + arg.end)
   }
 })
 </script>
