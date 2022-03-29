@@ -1,0 +1,21 @@
+{
+    "event": [
+        {
+            "id": "1",
+            "title": "Lecture",
+            "date": "2022-31-03T14:15:00"
+        },
+        {
+            "id": "2",
+            "title": "TA Meeting",
+            "date": "2022-05-04T12:15:00"   
+        }
+        {
+            "id": "3",
+            "title": "Compulsory assignment INF115",
+            "start": "2022-01-04",
+            "end": "2022-12-04T18:00:00",
+            "allDay": true
+        }
+    ]
+}
